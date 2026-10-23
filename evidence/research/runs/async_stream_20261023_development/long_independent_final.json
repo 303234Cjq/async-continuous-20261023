@@ -1,0 +1,32 @@
+{
+  "gate": "PASS",
+  "method": "wire CRC reparse plus word XOR edge detection, no core imports",
+  "runs": 3,
+  "accepted_hardware_edges": 1440000,
+  "results": [
+    {
+      "run": 2026108400,
+      "verified": "PASS",
+      "packets": 924,
+      "edges_accepted": 480000,
+      "raw_sha256": "3f59272d8f421be61d885fea5182d5e7bc51652e0fa30678a6e21e33a3f9250a",
+      "edge_sha256": "8a5916bda73ea35a63ab5747ef3372286f71b7d40839d0f4427ae3ea3f84df5f"
+    },
+    {
+      "run": 2026108401,
+      "verified": "PASS",
+      "packets": 924,
+      "edges_accepted": 480000,
+      "raw_sha256": "577d8b3eca63f8a05e418013f65c0962b4e634c4adf02ff9448a13ae84e48d8d",
+      "edge_sha256": "f89185b6e7c3b3b5c3eb89426c02357252b7aa0c458d29ff4be62f135b8f62fa"
+    },
+    {
+      "run": 2026108402,
+      "verified": "PASS",
+      "packets": 924,
+      "edges_accepted": 480000,
+      "raw_sha256": "c9122b606d18923720b040442be63fc4528d69eeb17c7ae4aea69254ab97fb57",
+      "edge_sha256": "59fb81118e346a1d5be6494984b31fab7ac25a24374872ea2965b6482a685ad6"
+    }
+  ]
+}

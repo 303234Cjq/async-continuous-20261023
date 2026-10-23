@@ -1,0 +1,35 @@
+{
+  "scope": "offline_compile_only_not_flashed_or_pin_verified",
+  "board": "nrf54lm20dk/nrf54lm20b/cpuapp",
+  "sdk": "/opt/nordic/ncs/v3.3.1",
+  "toolchain": "/opt/nordic/ncs/toolchains/0c0f19d91c",
+  "argv": [
+    "/opt/nordic/ncs/toolchains/0c0f19d91c/bin/python3",
+    "-m",
+    "west",
+    "build",
+    "--sysbuild",
+    "-b",
+    "nrf54lm20dk/nrf54lm20b/cpuapp",
+    "-p",
+    "auto",
+    "-d",
+    "/Applications/biyesheji/firmware/single_dk_async_source/build",
+    "/Applications/biyesheji/firmware/single_dk_async_source"
+  ],
+  "source_sha256": {
+    "src/main.c": "f52ecd52c0d9760ae731095e601ad78df6efc1f5babfdf809cb3f6f2c7f1f0f8",
+    "CMakeLists.txt": "82c261260f967de75e9d5a0dab15f81d61c0fe9d4f6dce10b1d195cd8e54c58a",
+    "prj.conf": "2dcb23a11561c0b31507f666839e98a2863f34785765c0c370ccd1f48afcb0b6",
+    "build.py": "c872157e61f37d7f3f65372ee2ac7021993a3a37ec0a6d034da163c7e7b4728f"
+  },
+  "exit_code": 0,
+  "status": "COMPILED",
+  "artifacts": {
+    "build/zephyr/.config": "be7a067025c3431904ad2100243df82deac5c36fdbdf541aa54b2d50e1df2e07",
+    "build/single_dk_async_source/zephyr/.config": "387193b58d44f2c3799df2be1bb8e911f1a2dd2d6d6d2d1519513baeda87972a",
+    "build/single_dk_async_source/zephyr/zephyr.dts": "21a0f5541f627817815a1192306fb4950e91a5f8a4ae234e99b5e326b3706a01",
+    "build/single_dk_async_source/zephyr/zephyr.hex": "6c073ff30c505cb6dc03f57bea8d8bed093eb6c066d29b27d6d17f17ab69c736",
+    "build/single_dk_async_source/zephyr/zephyr.elf": "85b2382d5ec8aff73e31d32bfadf499646616921c4917c00bfc8df730c4baa3a"
+  }
+}

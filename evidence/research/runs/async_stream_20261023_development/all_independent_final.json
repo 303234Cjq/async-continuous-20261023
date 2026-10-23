@@ -1,0 +1,200 @@
+{
+  "gate": "PASS",
+  "method": "wire CRC reparse plus word XOR edge detection, no core imports",
+  "runs": 24,
+  "accepted_hardware_edges": 1533000,
+  "results": [
+    {
+      "run": 2026108200,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 1000,
+      "raw_sha256": "5e7a664042b7a734b000b76c79902df6ec68bab206404de17f8b7c9484bc6a1c",
+      "edge_sha256": "0e7977c9ef96cbcf53ec7835eef09fe4d363325881b0679e6b7c53ef4dd1e5c1"
+    },
+    {
+      "run": 2026108201,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 2000,
+      "raw_sha256": "ed1a4652801213f2d76bd9e8c9c7bd9b7a5fa111e4a591c2804199c21137036f",
+      "edge_sha256": "fd461208456f5870dc07deaf779867a4083228d4467c0bebfd192e20fc93b94f"
+    },
+    {
+      "run": 2026108202,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 4000,
+      "raw_sha256": "70ff6a1adb213b4d9ba289133d6416e784fdd72d12a666041ae087be4ceb65f9",
+      "edge_sha256": "1e13c886bd0701e155327d07487ddd8a471dee329b3b1d0684eb5c3e8f6a35e6"
+    },
+    {
+      "run": 2026108203,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 8000,
+      "raw_sha256": "8ccbd0af8ce20201de89ea35afc568d5dfaece6ae2d10deb9aacd81752148109",
+      "edge_sha256": "d5b52418fc337ca6af06140ae1237c2364e5ca83e91a0afd120c5e262830b873"
+    },
+    {
+      "run": 2026108204,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 8000,
+      "raw_sha256": "c2569ca9c96d8087e4dfceab2acfaadaf305fd25bf6401563b2df1a34b0862aa",
+      "edge_sha256": "97fd7e58dcf3f7330e6f5bf505b015d113a1c6ce9e2c3fdcb2e7a47f4e683f66"
+    },
+    {
+      "run": 2026108205,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 1000,
+      "raw_sha256": "1b939f57ba7a58d47a0d9a4057126293eaf1fede2b06871705ed803e8276251d",
+      "edge_sha256": "86e956ecf4fc6bc7c56979426990c9f56cd3ab20bd0507c6951c07dc77a176af"
+    },
+    {
+      "run": 2026108206,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 2000,
+      "raw_sha256": "79907728707fb0e6dcda348ae28a2ac2992f53d6c2f4f6bb65f0ed3534583461",
+      "edge_sha256": "533863b415db762a42df43644bd49f0888f1a1c1f8563094d3a94accf53fc9c9"
+    },
+    {
+      "run": 2026108207,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 4000,
+      "raw_sha256": "70ff6a1adb213b4d9ba289133d6416e784fdd72d12a666041ae087be4ceb65f9",
+      "edge_sha256": "1e13c886bd0701e155327d07487ddd8a471dee329b3b1d0684eb5c3e8f6a35e6"
+    },
+    {
+      "run": 2026108208,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 8000,
+      "raw_sha256": "921c32921674b741f79c277036620aa83b2f2b2bbc4e1f0c56df64643a1a9241",
+      "edge_sha256": "98a82826bce0a0ff209423b89b02196f6d7ca78f39a9fa5f33ae8ad5180fe0a6"
+    },
+    {
+      "run": 2026108209,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 8000,
+      "raw_sha256": "34e7b9480194f25299e0afbff214005d22a103bfb4e35c1e82fabdc27ba2cf91",
+      "edge_sha256": "53114f3cffe1d630ec7bc09f4febf8cedde68a71b6891192021a184769a28189"
+    },
+    {
+      "run": 2026108210,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 1000,
+      "raw_sha256": "bf5262002401ab9ab6c24486aa3f6b1e654f493826d4a6f1f465a7fc863cb198",
+      "edge_sha256": "ccf27f8a6f4dccc6b0fcc4f3cb1b313829707978372361259519c1c94398d5f3"
+    },
+    {
+      "run": 2026108211,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 2000,
+      "raw_sha256": "dece0a8c77942a03721f9246a55243ebc42a5ca2bc425fb7c6bb9f4a8101d87f",
+      "edge_sha256": "b51dcab6d57efd55c6922bbafb28ecd245d1a6226f7f7280dedb36c1c14c15bd"
+    },
+    {
+      "run": 2026108212,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 4000,
+      "raw_sha256": "26a53d28685e1b5fea8546b3f660f7a700165c35567ae2e685c244710ff49be5",
+      "edge_sha256": "2e948c5f28dbf1ecee00a95f827341e0286e60d1bedd32092b1eec40010891c9"
+    },
+    {
+      "run": 2026108213,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 8000,
+      "raw_sha256": "e594a90de490e538b800ad9a0c3550dde9137de48bb99c4bcaf329bf35aa2c74",
+      "edge_sha256": "98a82826bce0a0ff209423b89b02196f6d7ca78f39a9fa5f33ae8ad5180fe0a6"
+    },
+    {
+      "run": 2026108214,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 8000,
+      "raw_sha256": "68221ccaa96b6ec8221b512bbb4e9a1dcbdd4a1b8d87136e3494bfea43e88d80",
+      "edge_sha256": "54f6b2d260ae644e31faf6645b3e82f9b0d57ce3df1b18bd60e5c18d56e7cd9f"
+    },
+    {
+      "run": 2026108300,
+      "verified": "EXPECTED_CAPTURE_INVALID",
+      "packets": 4,
+      "edges_accepted": 0,
+      "terminal_errors": 2,
+      "raw_sha256": "a98ca54bd2e79c54470f446b2b77f69c3b5baa3777281b46b86179a10c33aa95"
+    },
+    {
+      "run": 2026108301,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 8000,
+      "raw_sha256": "f21958c3d4263314cbcba34d5e08924056b5717cba3b36d7cb23f0796232f6e1",
+      "edge_sha256": "4a554dcc6326e9f92c788fd949cdc722f25c2f731d79e11bc7290b8fdb707131"
+    },
+    {
+      "run": 2026108302,
+      "verified": "EXPECTED_CAPTURE_INVALID",
+      "packets": 4,
+      "edges_accepted": 0,
+      "terminal_errors": 2,
+      "raw_sha256": "acd99fdd2937bf59a71167845e58bb8aeaf88eae9ac319ea1dbbeec3e7b016c8"
+    },
+    {
+      "run": 2026108303,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 8000,
+      "raw_sha256": "94d04535b05d07a1332739d11ae3c0c59ea36a9e406d1a34d48e2f6b8e913a87",
+      "edge_sha256": "42f8d946aeaf8be9d0d6eade6927e52e5576c1103fa98796ab605efce3484cc5"
+    },
+    {
+      "run": 2026108304,
+      "verified": "EXPECTED_CAPTURE_INVALID",
+      "packets": 4,
+      "edges_accepted": 0,
+      "terminal_errors": 2,
+      "raw_sha256": "e1f80d192f1ff8d3dfb46ed5a0916ec5833fcedbf64a7df2e4c066d3d690bff0"
+    },
+    {
+      "run": 2026108305,
+      "verified": "PASS",
+      "packets": 23,
+      "edges_accepted": 8000,
+      "raw_sha256": "fef7152ce227a5b55eb2b8e539e7bd756df2cb5f20dd47969823667c8e552225",
+      "edge_sha256": "af95cfbdefbc1089f667d77e8135c0f74032844426d4474f966e1b6c79a5b7b8"
+    },
+    {
+      "run": 2026108400,
+      "verified": "PASS",
+      "packets": 924,
+      "edges_accepted": 480000,
+      "raw_sha256": "3f59272d8f421be61d885fea5182d5e7bc51652e0fa30678a6e21e33a3f9250a",
+      "edge_sha256": "8a5916bda73ea35a63ab5747ef3372286f71b7d40839d0f4427ae3ea3f84df5f"
+    },
+    {
+      "run": 2026108401,
+      "verified": "PASS",
+      "packets": 924,
+      "edges_accepted": 480000,
+      "raw_sha256": "577d8b3eca63f8a05e418013f65c0962b4e634c4adf02ff9448a13ae84e48d8d",
+      "edge_sha256": "f89185b6e7c3b3b5c3eb89426c02357252b7aa0c458d29ff4be62f135b8f62fa"
+    },
+    {
+      "run": 2026108402,
+      "verified": "PASS",
+      "packets": 924,
+      "edges_accepted": 480000,
+      "raw_sha256": "c9122b606d18923720b040442be63fc4528d69eeb17c7ae4aea69254ab97fb57",
+      "edge_sha256": "59fb81118e346a1d5be6494984b31fab7ac25a24374872ea2965b6482a685ad6"
+    }
+  ]
+}

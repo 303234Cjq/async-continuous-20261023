@@ -1,0 +1,23 @@
+{
+  "version": "async-source-v2",
+  "run": 2026108301,
+  "armed": 0,
+  "complete": 1,
+  "requested_edges": 8000,
+  "input_count": 1,
+  "edge_count": 8000,
+  "period_ticks": 2000,
+  "timer_hz": 16000000,
+  "marker_level": 0,
+  "input_tick": 966400,
+  "first_counter_tick": 968403,
+  "last_edge_tick": 16966401,
+  "stop_counter_tick": 16966403,
+  "errors": 0,
+  "uart_dropped": 0,
+  "cmd_overflow": 0,
+  "hf_before_request": 0,
+  "hf_high_accuracy": 1,
+  "input_pin": "P1.03",
+  "marker_pin": "P1.04"
+}

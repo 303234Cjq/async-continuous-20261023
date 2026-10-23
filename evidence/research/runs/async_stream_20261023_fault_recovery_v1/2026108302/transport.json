@@ -1,0 +1,37 @@
+{
+  "packets": 4,
+  "packet_errors": [
+    {
+      "seq": 0,
+      "fdebug": 0,
+      "errors": 2
+    },
+    {
+      "seq": 1,
+      "fdebug": 0,
+      "errors": 2
+    },
+    {
+      "seq": 2,
+      "fdebug": 0,
+      "errors": 2
+    },
+    {
+      "seq": 3,
+      "fdebug": 0,
+      "errors": 2
+    }
+  ],
+  "ready": {
+    "version": "continuous-input-v1",
+    "idle": 1,
+    "inputs": "12,13",
+    "A_released": 1,
+    "A_latch_high": 0,
+    "B_input": 1,
+    "local_pullup": 0,
+    "sample_hz": 1000000,
+    "words_per_block": 4096,
+    "buffers": 4
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "run": 2026108302,
+  "requested_blocks": 23,
+  "produced": 4,
+  "exported": 4,
+  "errors": 2,
+  "fdebug": 0,
+  "discarded_partial_words": 0,
+  "A_released": true,
+  "B_input_only": true
+}

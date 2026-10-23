@@ -1,0 +1,127 @@
+{
+  "gate": "PASS",
+  "runs": 24,
+  "original_acquisitions_unchanged": true,
+  "checks": [
+    {
+      "run": 2026108200,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108201,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108202,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108203,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108204,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108205,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108206,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108207,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108208,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108209,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108210,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108211,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108212,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108213,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108214,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108300,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108301,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108302,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108303,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108304,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108305,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108400,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108401,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    },
+    {
+      "run": 2026108402,
+      "analysis_matches_original": true,
+      "stricter_expected_gate": "PASS"
+    }
+  ]
+}

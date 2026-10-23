@@ -1,0 +1,21 @@
+{
+  "firmware/pico_continuous_capture/build.py": "d29a5bc8e29833b5f94532e07f490182ded37de541418bcbae964a14f071374f",
+  "firmware/pico_continuous_capture/CMakeLists.txt": "a2982e29eee917d87baee95fe9be7237a2dd98d52c42b06dfc495c551805b691",
+  "firmware/pico_continuous_capture/build_manifest.json": "76e2f9c8a08bddba06b40c6145aa4e97fc0fdf064f1716d103750326d66f776f",
+  "firmware/pico_continuous_capture/finite.pio": "e4bfbd0364d4d15750a487b680876814167e971319833ff01ae070fd9ac9f187",
+  "firmware/pico_continuous_capture/README.md": "91fafbefed346446070cfce4d9b4e17d1d3673bc60841012921c333456429a80",
+  "firmware/pico_continuous_capture/main.c": "4f35718e35bcea9eb313fa0eaabcaeb0a4f183b540746395d526b503883b98ee",
+  "firmware/single_dk_async_source/build.py": "c872157e61f37d7f3f65372ee2ac7021993a3a37ec0a6d034da163c7e7b4728f",
+  "firmware/single_dk_async_source/CMakeLists.txt": "82c261260f967de75e9d5a0dab15f81d61c0fe9d4f6dce10b1d195cd8e54c58a",
+  "firmware/single_dk_async_source/prj.conf": "2dcb23a11561c0b31507f666839e98a2863f34785765c0c370ccd1f48afcb0b6",
+  "firmware/single_dk_async_source/build_manifest.json": "15d6af8a1708f696e262bd5cade9898997247dbeff30f8ce2ec2fa7eb7249e90",
+  "firmware/single_dk_async_source/README.md": "6fd1f52da8846d3ea3713708cff5edbc2780545bfa963593a8b302074bc06b9f",
+  "firmware/single_dk_async_source/src/main.c": "198753757208f825732a9f1bd191f93d055f63580fd816a0d6c5a80b4b6e70e5",
+  "software/async_stream/matrix.py": "ae81c0c1742b9ed3af1b8ef75a18ca15260659ac7e17aa5ec6dd2881782b82a7",
+  "software/async_stream/collect.py": "96cd56df1757178de6cb347b393f44fb54c15ca42027bfaff95c92d291b2e87b",
+  "software/async_stream/test_core.py": "e3d1c4aeeb55e97923e8984cc2255ee966d7f0216772de096438f2d74076a9de",
+  "software/async_stream/core.py": "178f5101447488ae211877527964617a9f758e4b259890a341ddd8512cdeca82",
+  "software/async_stream/README.md": "8eaf4d83377bbc2959c0338b8af8311a24326939c5bf1c21bb8651a3d5da5d1a",
+  "software/async_stream/report.py": "95f1238c0b5b5ebf787ff1636b35ba5c9c9bbeb398220a29df28f803850b9b94",
+  "software/async_stream/independent_check.py": "3c755844a1842efe66509b4f07ffc4c844ee4885e3b4d9c245bd19e19fd79848"
+}

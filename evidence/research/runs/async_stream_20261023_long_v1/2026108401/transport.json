@@ -1,0 +1,16 @@
+{
+  "packets": 924,
+  "packet_errors": [],
+  "ready": {
+    "version": "continuous-input-v1",
+    "idle": 1,
+    "inputs": "12,13",
+    "A_released": 1,
+    "A_latch_high": 0,
+    "B_input": 1,
+    "local_pullup": 0,
+    "sample_hz": 1000000,
+    "words_per_block": 4096,
+    "buffers": 4
+  }
+}

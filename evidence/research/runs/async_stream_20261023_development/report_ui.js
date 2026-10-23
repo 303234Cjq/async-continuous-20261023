@@ -1,0 +1,1 @@
+const select=document.getElementById('phase');function filter(){let n=0;for(const row of document.querySelectorAll('#runs tbody tr')){row.hidden=select.value!=='all'&&row.dataset.phase!==select.value;if(!row.hidden)n++;}document.getElementById('visibleCount').textContent='显示 '+n+' 次记录';}select.addEventListener('change',filter);filter();

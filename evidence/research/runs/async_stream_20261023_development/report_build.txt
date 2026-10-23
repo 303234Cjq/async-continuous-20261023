@@ -1,0 +1,1 @@
+{"formal_runs": 24, "valid_runs": 21, "injected_invalid_runs": 3, "accepted_hardware_B_transitions": 1533000, "long_runs": 3, "long_source_seconds_nominal": 60, "nominal_sample_rate_hz": 1000000, "sample_rate_estimated": null, "scope": "Independent-clock wired pulse train and continuous capture, not wireless latency", "built": "2026-10-23T13:39:24.337976+08:00"}

@@ -1,0 +1,13 @@
+{
+  "scope": "stable compiled images, not a fresh full-flash dump",
+  "images": {
+    "pico_polling_phase.uf2": {
+      "source": "/Applications/biyesheji/firmware/pico_polling_phase/build/pico_polling_phase.uf2",
+      "sha256": "5a021b2377730990c242cf016dacfa48347c5a353a9b0ade7e0cff55aac8d18c"
+    },
+    "zephyr.hex": {
+      "source": "/Applications/biyesheji/firmware/single_dk_polling/build/single_dk_polling/zephyr/zephyr.hex",
+      "sha256": "20f3d6201f812de751db6e2d225af9f44c07e66f6e704e725e5faf3c95aed665"
+    }
+  }
+}

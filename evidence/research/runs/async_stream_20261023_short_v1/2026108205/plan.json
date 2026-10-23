@@ -1,0 +1,14 @@
+{
+  "run": 2026108205,
+  "edges": 1000,
+  "period_ticks": 16000,
+  "blocks": 23,
+  "hold_ms": 0,
+  "sample_hz_nominal": 1000000,
+  "sample_hz_estimated": null,
+  "gate_version": "async-gates-v1",
+  "evidence_type": "hardware_acquisition",
+  "expected_valid": true,
+  "label": "1k",
+  "repeat": 1
+}

@@ -1,0 +1,38 @@
+{
+  "client_time": "2026-10-23T13:23:54.198986+08:00",
+  "scope": "candidate pre-program source freeze",
+  "gates": {
+    "version": "async-gates-v1",
+    "A_start_sample_inclusive": [
+      1000,
+      10000
+    ],
+    "A_width_sample_inclusive": [
+      28,
+      100
+    ],
+    "period_gap_tolerance_samples": 2,
+    "relative_configuration_tolerance_ppm": 5000,
+    "source_anchor_tolerance_ticks": 16,
+    "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+    "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+    "reference": "none; not an absolute accuracy gate"
+  },
+  "files": {
+    "firmware/pico_continuous_capture/build.py": "d29a5bc8e29833b5f94532e07f490182ded37de541418bcbae964a14f071374f",
+    "firmware/pico_continuous_capture/CMakeLists.txt": "a2982e29eee917d87baee95fe9be7237a2dd98d52c42b06dfc495c551805b691",
+    "firmware/pico_continuous_capture/build_manifest.json": "76e2f9c8a08bddba06b40c6145aa4e97fc0fdf064f1716d103750326d66f776f",
+    "firmware/pico_continuous_capture/finite.pio": "e4bfbd0364d4d15750a487b680876814167e971319833ff01ae070fd9ac9f187",
+    "firmware/pico_continuous_capture/main.c": "4f35718e35bcea9eb313fa0eaabcaeb0a4f183b540746395d526b503883b98ee",
+    "firmware/single_dk_async_source/build.py": "c872157e61f37d7f3f65372ee2ac7021993a3a37ec0a6d034da163c7e7b4728f",
+    "firmware/single_dk_async_source/CMakeLists.txt": "82c261260f967de75e9d5a0dab15f81d61c0fe9d4f6dce10b1d195cd8e54c58a",
+    "firmware/single_dk_async_source/prj.conf": "2dcb23a11561c0b31507f666839e98a2863f34785765c0c370ccd1f48afcb0b6",
+    "firmware/single_dk_async_source/build_manifest.json": "1baa2ce1da58467ed455bae1d2fbe6531035b9674bb48d8f34895e4c1f13387e",
+    "firmware/single_dk_async_source/src/main.c": "f52ecd52c0d9760ae731095e601ad78df6efc1f5babfdf809cb3f6f2c7f1f0f8",
+    "software/async_stream/collect.py": "96cd56df1757178de6cb347b393f44fb54c15ca42027bfaff95c92d291b2e87b",
+    "software/async_stream/test_core.py": "23ba3eca4abf2271513caae44b62e8bb75583f4bbb72151594d95855b2090e66",
+    "software/async_stream/core.py": "c6c0ae83b4ff6d3021db7a3d35f96a8ffca1a03a1970dec859414c76107a8a63",
+    "firmware/pico_continuous_capture/build/pico_continuous_capture.uf2": "80329d1ac97e11c987821774d48cd60e69722954a10167a7e34b20c6be547e47",
+    "firmware/single_dk_async_source/build/single_dk_async_source/zephyr/zephyr.hex": "6c073ff30c505cb6dc03f57bea8d8bed093eb6c066d29b27d6d17f17ab69c736"
+  }
+}

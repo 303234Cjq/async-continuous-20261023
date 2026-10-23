@@ -1,0 +1,4 @@
+{"seq": 0, "start_sample": 0, "bytes": 16384, "fdebug": 0, "errors": 2, "crc32": 434277888, "header_crc32": 2337840123}
+{"seq": 1, "start_sample": 65536, "bytes": 16384, "fdebug": 0, "errors": 2, "crc32": 2551344733, "header_crc32": 2202228722}
+{"seq": 2, "start_sample": 131072, "bytes": 16384, "fdebug": 0, "errors": 2, "crc32": 3350683021, "header_crc32": 2419596044}
+{"seq": 3, "start_sample": 196608, "bytes": 16384, "fdebug": 0, "errors": 2, "crc32": 3561795093, "header_crc32": 975568827}

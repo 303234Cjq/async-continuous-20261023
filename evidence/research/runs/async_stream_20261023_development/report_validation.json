@@ -1,0 +1,13 @@
+{
+  "local_refs_checked": 84,
+  "missing": [],
+  "formal_rows": 24,
+  "phase_counts": {
+    "fault": 6,
+    "long": 3,
+    "short": 15
+  },
+  "script_syntax": "PASS",
+  "filter_tests": "4 filters passed",
+  "browser_visual_check": "not performed; CUA blocked file URL, no workaround attempted"
+}

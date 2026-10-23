@@ -1,0 +1,109 @@
+{
+  "plans": [
+    {
+      "run": 2026108300,
+      "edges": 8000,
+      "period_ticks": 2000,
+      "blocks": 23,
+      "hold_ms": 500,
+      "sample_hz_nominal": 1000000,
+      "sample_hz_estimated": null,
+      "gate_version": "async-gates-v1",
+      "evidence_type": "hardware_acquisition",
+      "expected_valid": false,
+      "label": "hold_fault",
+      "repeat": 0
+    },
+    {
+      "run": 2026108301,
+      "edges": 8000,
+      "period_ticks": 2000,
+      "blocks": 23,
+      "hold_ms": 0,
+      "sample_hz_nominal": 1000000,
+      "sample_hz_estimated": null,
+      "gate_version": "async-gates-v1",
+      "evidence_type": "hardware_acquisition",
+      "expected_valid": true,
+      "label": "recovery",
+      "repeat": 0
+    },
+    {
+      "run": 2026108302,
+      "edges": 8000,
+      "period_ticks": 2000,
+      "blocks": 23,
+      "hold_ms": 500,
+      "sample_hz_nominal": 1000000,
+      "sample_hz_estimated": null,
+      "gate_version": "async-gates-v1",
+      "evidence_type": "hardware_acquisition",
+      "expected_valid": false,
+      "label": "hold_fault",
+      "repeat": 1
+    },
+    {
+      "run": 2026108303,
+      "edges": 8000,
+      "period_ticks": 2000,
+      "blocks": 23,
+      "hold_ms": 0,
+      "sample_hz_nominal": 1000000,
+      "sample_hz_estimated": null,
+      "gate_version": "async-gates-v1",
+      "evidence_type": "hardware_acquisition",
+      "expected_valid": true,
+      "label": "recovery",
+      "repeat": 1
+    },
+    {
+      "run": 2026108304,
+      "edges": 8000,
+      "period_ticks": 2000,
+      "blocks": 23,
+      "hold_ms": 500,
+      "sample_hz_nominal": 1000000,
+      "sample_hz_estimated": null,
+      "gate_version": "async-gates-v1",
+      "evidence_type": "hardware_acquisition",
+      "expected_valid": false,
+      "label": "hold_fault",
+      "repeat": 2
+    },
+    {
+      "run": 2026108305,
+      "edges": 8000,
+      "period_ticks": 2000,
+      "blocks": 23,
+      "hold_ms": 0,
+      "sample_hz_nominal": 1000000,
+      "sample_hz_estimated": null,
+      "gate_version": "async-gates-v1",
+      "evidence_type": "hardware_acquisition",
+      "expected_valid": true,
+      "label": "recovery",
+      "repeat": 2
+    }
+  ],
+  "gates": {
+    "version": "async-gates-v1",
+    "A_start_sample_inclusive": [
+      1000,
+      10000
+    ],
+    "A_width_sample_inclusive": [
+      28,
+      100
+    ],
+    "period_gap_tolerance_samples": 2,
+    "relative_configuration_tolerance_ppm": 5000,
+    "source_anchor_tolerance_ticks": 16,
+    "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+    "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+    "reference": "none; not an absolute accuracy gate"
+  },
+  "phase": "fault",
+  "created": "2026-10-23T13:30:01.327396+08:00",
+  "no_flash_or_reset_commands": true,
+  "serial_connections_kept_open_between_runs": true
+}

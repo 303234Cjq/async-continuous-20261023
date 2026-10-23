@@ -1,0 +1,2 @@
+STREAM_READY version=continuous-input-v1 idle=1 inputs=12,13 A_released=1 A_latch_high=0 B_input=1 local_pullup=0 sample_hz=1000000 words_per_block=4096 buffers=4
+AS_FROZEN version=async-source-v2 run=2026108402 armed=0 complete=1 requested_edges=480000 input_count=1 edge_count=480000 period_ticks=2000 timer_hz=16000000 marker_level=0 input_tick=1032954 first_counter_tick=1034957 last_edge_tick=961032955 stop_counter_tick=961032957 errors=0 uart_dropped=0 cmd_overflow=0 hf_before_request=0 hf_high_accuracy=1 input_pin=P1.03 marker_pin=P1.04

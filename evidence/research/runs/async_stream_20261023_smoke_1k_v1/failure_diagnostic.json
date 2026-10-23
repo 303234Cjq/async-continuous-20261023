@@ -1,0 +1,88 @@
+{
+  "diagnostic_only_failed_run": true,
+  "A": [
+    [
+      2051,
+      0
+    ],
+    [
+      2085,
+      1
+    ]
+  ],
+  "B_count": 1000,
+  "initial": 1,
+  "final": 1,
+  "samples": 1507328,
+  "gaps": {
+    "998": 289,
+    "997": 700,
+    "996": 10
+  },
+  "first_B": [
+    3048,
+    4046,
+    5043,
+    6041,
+    7038,
+    8035,
+    9033,
+    10030,
+    11027,
+    12024,
+    13022,
+    14019,
+    15016,
+    16013,
+    17011
+  ],
+  "last_B": [
+    985373,
+    986370,
+    987367,
+    988364,
+    989362,
+    990359,
+    991356,
+    992353,
+    993349,
+    994346,
+    995343,
+    996340,
+    997337,
+    998333,
+    999330
+  ],
+  "tail": {
+    "run": 2026108101,
+    "requested_blocks": 23,
+    "produced": 23,
+    "exported": 23,
+    "errors": 0,
+    "fdebug": 0,
+    "discarded_partial_words": 0,
+    "A_released": true,
+    "B_input_only": true
+  },
+  "source": {
+    "version": "async-source-v1",
+    "run": 2026108101,
+    "armed": 0,
+    "complete": 1,
+    "requested_edges": 1000,
+    "input_count": 1,
+    "edge_count": 1000,
+    "period_ticks": 16000,
+    "timer_hz": 16000000,
+    "marker_level": 0,
+    "input_tick": 885089,
+    "first_counter_tick": 901092,
+    "last_edge_tick": 16885090,
+    "stop_counter_tick": 16885092,
+    "errors": 0,
+    "uart_dropped": 0,
+    "cmd_overflow": 0,
+    "input_pin": "P1.03",
+    "marker_pin": "P1.04"
+  }
+}

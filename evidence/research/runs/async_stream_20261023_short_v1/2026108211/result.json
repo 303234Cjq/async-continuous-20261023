@@ -1,0 +1,44 @@
+{
+  "run": 2026108211,
+  "gate": "PASS",
+  "gates": {
+    "version": "async-gates-v1",
+    "A_start_sample_inclusive": [
+      1000,
+      10000
+    ],
+    "A_width_sample_inclusive": [
+      28,
+      100
+    ],
+    "period_gap_tolerance_samples": 2,
+    "relative_configuration_tolerance_ppm": 5000,
+    "source_anchor_tolerance_ticks": 16,
+    "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+    "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+    "reference": "none; not an absolute accuracy gate"
+  },
+  "integrity_errors": [],
+  "observation_errors": [],
+  "metrics": {
+    "samples": 1507328,
+    "capture_seconds_nominal": 1.507328,
+    "actual_B_transitions": 2000,
+    "intervals": 1999,
+    "A_falling_sample": 2000,
+    "A_rising_sample": 2033,
+    "first_B_sample": 2501,
+    "last_B_sample": 1002001,
+    "mean_interval_samples": 500.0,
+    "period_gap_histogram": {
+      "500": 1999
+    },
+    "relative_clock_difference_ppm": 0.0,
+    "source_span_residual_ticks": -2,
+    "source_stop_delay_ticks": 2,
+    "rates_are_nominal": true,
+    "measurement_scope": "independent-clock edge train; not wireless input latency"
+  },
+  "sample_hz_estimated": null,
+  "experiment_gate": "PASS"
+}

@@ -1,0 +1,88 @@
+{
+  "results": [
+    {
+      "run": 2026108400,
+      "label": "8k_60s",
+      "repeat": 0,
+      "experiment_gate": "PASS",
+      "capture_gate": "PASS",
+      "metrics": {
+        "samples": 60555264,
+        "capture_seconds_nominal": 60.555264,
+        "actual_B_transitions": 480000,
+        "intervals": 479999,
+        "A_falling_sample": 2004,
+        "A_rising_sample": 2038,
+        "first_B_sample": 2130,
+        "last_B_sample": 60002019,
+        "mean_interval_samples": 125.00002916672743,
+        "period_gap_histogram": {
+          "124": 555,
+          "125": 478875,
+          "126": 569
+        },
+        "relative_clock_difference_ppm": 0.23333381937717945,
+        "source_span_residual_ticks": -2,
+        "source_stop_delay_ticks": 2,
+        "rates_are_nominal": true,
+        "measurement_scope": "independent-clock edge train; not wireless input latency"
+      }
+    },
+    {
+      "run": 2026108401,
+      "label": "8k_60s",
+      "repeat": 1,
+      "experiment_gate": "PASS",
+      "capture_gate": "PASS",
+      "metrics": {
+        "samples": 60555264,
+        "capture_seconds_nominal": 60.555264,
+        "actual_B_transitions": 480000,
+        "intervals": 479999,
+        "A_falling_sample": 2001,
+        "A_rising_sample": 2034,
+        "first_B_sample": 2127,
+        "last_B_sample": 60002016,
+        "mean_interval_samples": 125.00002916672743,
+        "period_gap_histogram": {
+          "124": 565,
+          "125": 478855,
+          "126": 579
+        },
+        "relative_clock_difference_ppm": 0.23333381937717945,
+        "source_span_residual_ticks": -2,
+        "source_stop_delay_ticks": 2,
+        "rates_are_nominal": true,
+        "measurement_scope": "independent-clock edge train; not wireless input latency"
+      }
+    },
+    {
+      "run": 2026108402,
+      "label": "8k_60s",
+      "repeat": 2,
+      "experiment_gate": "PASS",
+      "capture_gate": "PASS",
+      "metrics": {
+        "samples": 60555264,
+        "capture_seconds_nominal": 60.555264,
+        "actual_B_transitions": 480000,
+        "intervals": 479999,
+        "A_falling_sample": 2001,
+        "A_rising_sample": 2033,
+        "first_B_sample": 2127,
+        "last_B_sample": 60002016,
+        "mean_interval_samples": 125.00002916672743,
+        "period_gap_histogram": {
+          "124": 581,
+          "125": 478823,
+          "126": 595
+        },
+        "relative_clock_difference_ppm": 0.23333381937717945,
+        "source_span_residual_ticks": -2,
+        "source_stop_delay_ticks": 2,
+        "rates_are_nominal": true,
+        "measurement_scope": "independent-clock edge train; not wireless input latency"
+      }
+    }
+  ]
+}

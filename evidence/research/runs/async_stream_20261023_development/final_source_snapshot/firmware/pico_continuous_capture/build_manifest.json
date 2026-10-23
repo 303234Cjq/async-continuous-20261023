@@ -1,0 +1,50 @@
+{
+  "sdk_commit": "6a7db34ff63345a7badec79ebea3aaef1712f374",
+  "sdk_tracked_diff": "",
+  "board": "pico_w",
+  "nominal_sample_hz": 1000000,
+  "estimated_sample_hz": null,
+  "sys_clock_configured_hz": 125000000,
+  "pio_divider": 125.0,
+  "instructions_per_sample": 1,
+  "samples_per_block": 65536,
+  "source_sha256": {
+    "main.c": "4f35718e35bcea9eb313fa0eaabcaeb0a4f183b540746395d526b503883b98ee",
+    "finite.pio": "e4bfbd0364d4d15750a487b680876814167e971319833ff01ae070fd9ac9f187",
+    "CMakeLists.txt": "a2982e29eee917d87baee95fe9be7237a2dd98d52c42b06dfc495c551805b691",
+    "build.py": "d29a5bc8e29833b5f94532e07f490182ded37de541418bcbae964a14f071374f"
+  },
+  "images": {
+    "pico_continuous_capture.uf2": "80329d1ac97e11c987821774d48cd60e69722954a10167a7e34b20c6be547e47",
+    "pico_continuous_capture.elf": "96f233811ac148c4227a0b1f382e225e2553deb128655f4325cefe28352e9dc3"
+  },
+  "commands": [
+    [
+      "/opt/homebrew/bin/cmake",
+      "-S",
+      "/Applications/biyesheji/firmware/pico_continuous_capture",
+      "-B",
+      "/Applications/biyesheji/firmware/pico_continuous_capture/build",
+      "-DPICO_BOARD=pico_w",
+      "-DPICO_GCC_TRIPLE=arm-zephyr-eabi",
+      "-DPICO_TOOLCHAIN_PATH=/opt/nordic/ncs/toolchains/0c0f19d91c/opt/zephyr-sdk/arm-zephyr-eabi",
+      "-DCMAKE_BUILD_TYPE=Release",
+      "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+    ],
+    [
+      "/opt/homebrew/bin/cmake",
+      "-S",
+      "/Applications/biyesheji/firmware/pico_ssm_reproduction/pico-ssm/lib/pico-sdk/tools/pioasm",
+      "-B",
+      "/Applications/biyesheji/firmware/pico_continuous_capture/build/pioasm",
+      "-DCMAKE_POLICY_VERSION_MINIMUM=3.5"
+    ],
+    [
+      "/opt/homebrew/bin/cmake",
+      "--build",
+      "/Applications/biyesheji/firmware/pico_continuous_capture/build",
+      "-j",
+      "4"
+    ]
+  ]
+}

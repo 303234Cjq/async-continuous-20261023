@@ -1,0 +1,5 @@
+; One deterministic IN per sample, using hardware wrap without an extra JMP.
+.program continuous_pair
+.wrap_target
+    in pins, 2
+.wrap

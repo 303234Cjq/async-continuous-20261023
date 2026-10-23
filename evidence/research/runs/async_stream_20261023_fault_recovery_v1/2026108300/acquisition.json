@@ -1,0 +1,7 @@
+{
+  "status": "COLLECTED",
+  "firmware_changed": false,
+  "board_reset_attempted": false,
+  "experiment_gate": "PASS",
+  "capture_gate": "FAIL"
+}

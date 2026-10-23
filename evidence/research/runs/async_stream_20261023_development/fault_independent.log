@@ -1,0 +1,6 @@
+{"run": 2026108300, "verified": "EXPECTED_CAPTURE_INVALID", "packets": 4, "edges_accepted": 0, "terminal_errors": 2, "raw_sha256": "a98ca54bd2e79c54470f446b2b77f69c3b5baa3777281b46b86179a10c33aa95"}
+{"run": 2026108301, "verified": "PASS", "packets": 23, "edges_accepted": 8000, "raw_sha256": "f21958c3d4263314cbcba34d5e08924056b5717cba3b36d7cb23f0796232f6e1", "edge_sha256": "4a554dcc6326e9f92c788fd949cdc722f25c2f731d79e11bc7290b8fdb707131"}
+{"run": 2026108302, "verified": "EXPECTED_CAPTURE_INVALID", "packets": 4, "edges_accepted": 0, "terminal_errors": 2, "raw_sha256": "acd99fdd2937bf59a71167845e58bb8aeaf88eae9ac319ea1dbbeec3e7b016c8"}
+{"run": 2026108303, "verified": "PASS", "packets": 23, "edges_accepted": 8000, "raw_sha256": "94d04535b05d07a1332739d11ae3c0c59ea36a9e406d1a34d48e2f6b8e913a87", "edge_sha256": "42f8d946aeaf8be9d0d6eade6927e52e5576c1103fa98796ab605efce3484cc5"}
+{"run": 2026108304, "verified": "EXPECTED_CAPTURE_INVALID", "packets": 4, "edges_accepted": 0, "terminal_errors": 2, "raw_sha256": "e1f80d192f1ff8d3dfb46ed5a0916ec5833fcedbf64a7df2e4c066d3d690bff0"}
+{"run": 2026108305, "verified": "PASS", "packets": 23, "edges_accepted": 8000, "raw_sha256": "fef7152ce227a5b55eb2b8e539e7bd756df2cb5f20dd47969823667c8e552225", "edge_sha256": "af95cfbdefbc1089f667d77e8135c0f74032844426d4474f966e1b6c79a5b7b8"}

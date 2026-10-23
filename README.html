@@ -1,0 +1,111 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>独立时钟输入、连续采集与故障恢复：2026-10-23</title><style>
+body{margin:0;background:#f3f6fa;color:#182437;font:16px/1.75 system-ui,-apple-system,"PingFang SC",sans-serif}
+main{max-width:900px;margin:auto;padding:36px 22px}
+a{color:#1d4ed8}
+h1{font-size:30px;line-height:1.4;margin-top:0}
+h2{font-size:22px;margin-top:2em;border-bottom:1px solid #dce3ec;padding-bottom:.3em}
+h3{font-size:18px;margin-top:1.6em}
+table{border-collapse:collapse;width:100%;font-size:14px;background:white;margin:1em 0}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid #e2e8f0}
+th{background:#f7fafc}
+code{background:#eef2f7;padding:2px 5px;border-radius:4px;font-size:14px}
+pre{background:#0f172a;color:#e2e8f0;padding:16px;border-radius:10px;overflow:auto}
+pre code{background:none;color:inherit;padding:0}
+img{max-width:100%;height:auto;background:white}
+blockquote{margin:1em 0;padding:.6em 1em;background:#fff6df;border-left:4px solid #d97706}
+.back{display:inline-block;margin-bottom:18px;font-size:14px;text-decoration:none}
+</style></head><body><main><a class="back" href="index.html">← 返回报告首页</a><h1>独立时钟输入、连续采集与故障恢复：2026-10-23</h1>
+<p>正式24批：21批有效采集，共1,533,000个B翻转边沿；3批故意耗尽缓冲并整次拒收。有效采集和故障拒收均经独立wire重解析核对。另存v1失败冒烟、v2通过冒烟和上一版基线，不混入正式分母。</p>
+<h2>本轮实际推进</h2>
+<p>从5 MS/s有限窗口分支新增1 MS/s连续采集分支。原三线不变，Pico一次启动后只采样，DK自身16 MHz标称时基驱动TIMER→DPPI→GPIO，并由硬件计数到N自停。两个时钟独立，没有跨MCU直接相减时间戳。</p>
+<p>源v1未请求HFXO，1k间隔996–998样本，违反原定周期门槛；所有1000个边沿及数据块完整，失败保留。v2请求并确认HFXO，启动记录<code>hf_before_request=0 / hf_high_accuracy=1</code>。同类1k冒烟平均1000.001001样本并通过。它不溯源解释旧无线丢包。</p>
+<h2>正式矩阵</h2>
+<table>
+<thead>
+<tr>
+<th>组</th>
+<th style="text-align: right;">运行数</th>
+<th>条件</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>短测</td>
+<td style="text-align: right;">15</td>
+<td>1k/2k/4k/8k/2011 ticks，各3批</td>
+<td>全通过，69000边沿</td>
+</tr>
+<tr>
+<td>缓冲故障</td>
+<td style="text-align: right;">3</td>
+<td>首块后前台暂停导出500 ms</td>
+<td>错误位2，导出4/23块，整次无效</td>
+</tr>
+<tr>
+<td>下一run恢复</td>
+<td style="text-align: right;">3</td>
+<td>故障后新ID重新ARM，不刷写/不发重启命令</td>
+<td>全通过，24000边沿</td>
+</tr>
+<tr>
+<td>长测</td>
+<td style="text-align: right;">3</td>
+<td>8k×60标称秒，480000翻转/批</td>
+<td>全通过，共1440000边沿</td>
+</tr>
+</tbody>
+</table>
+<p>长测每批924块、60555264个双通道样本、15138816字节原始payload，连续60.555264标称秒。首次到末次B边沿含479999个间隔。8k翻转对应4 kHz方波；不是8k完整方波周期。</p>
+<table>
+<thead>
+<tr>
+<th>长测run</th>
+<th style="text-align: right;">平均间隔/样本</th>
+<th style="text-align: right;">与标称125的相对差/ppm</th>
+<th style="text-align: right;">数据块</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2026108400</td>
+<td style="text-align: right;">125.000029167</td>
+<td style="text-align: right;">0.233334</td>
+<td style="text-align: right;">924</td>
+</tr>
+<tr>
+<td>2026108401</td>
+<td style="text-align: right;">125.000029167</td>
+<td style="text-align: right;">0.233334</td>
+<td style="text-align: right;">924</td>
+</tr>
+<tr>
+<td>2026108402</td>
+<td style="text-align: right;">125.000029167</td>
+<td style="text-align: right;">0.233334</td>
+<td style="text-align: right;">924</td>
+</tr>
+</tbody>
+</table>
+<h2>预置门槛与独立核对</h2>
+<p><code>async-gates-v1</code>在首个候选上板前冻结，v1失败后没有放宽周期门槛：源数与采集数一致、块完整、A单个下降/上升、名义A位置1000–10000样本、宽28–100样本、周期在floor/ceil名义值±2样本、平均相对配置差≤5000 ppm，源锚点残差≤16 DK ticks。这是功能与配置一致性门槛，不是校准精度声明。</p>
+<p>独立检查器不导入主分析器，重读wire头、块CRC及最终状态，再用32位XOR检测边沿，与主分析的u64整数索引逐项相等。三个独立检查文件在开发证据目录。软件测试覆盖截断、CRC损坏、重排、计数不符、物理边沿缺失及全局错误时禁止输出指标。</p>
+<h2>可研究的改进与边界</h2>
+<ol>
+<li>以连续样本索引、DMA块所有权、CRC、源计数及终态构成整次有效性约束；覆盖风险出现时整次拒收，而不是选看似正常的片段。</li>
+<li>实物触发缓冲耗尽，随后新epoch无需刷写/发送重启命令恢复；三组对照均通过。这里注入的是固件前台导出暂停，不是已复现USB主机背压。</li>
+<li>非整数周期2011/16=125.6875样本，约7956.24翻转/s，检验125/126格点的量化行为，不将采样量化当成源真实抖动。</li>
+</ol>
+<p>当前测量采样率只有标称1 MS/s，<code>sample_hz_estimated=null</code>；两个板相互比较只提供相对时基一致性，不能给出绝对准确度。没有ESB报文、USB HID报告或成品鼠标。旧5 MS/s有限窗口与随机输入报告模型仍独立保留。方法增量不等于已证明新颖性或专利性。</p>
+<h2>复算和证据</h2>
+<pre><code class="language-sh">/opt/nordic/ncs/toolchains/0c0f19d91c/bin/python3 /Applications/biyesheji/software/async_stream/independent_check.py /Applications/biyesheji/research/runs/async_stream_20261023_long_v1 --output /tmp/async_long_recheck.json
+PYTHONPATH=/tmp/biyesheji_pico_plotdeps /opt/nordic/ncs/toolchains/0c0f19d91c/bin/python3 /Applications/biyesheji/software/async_stream/report.py
+</code></pre>
+<ul>
+<li><a href="index.html">交互报告</a>、<a href="results.json">机器可读汇总</a>。</li>
+<li><a href="evidence/research/runs/async_stream_20261023_short_v1/index.html">短测原始目录</a>、<a href="evidence/research/runs/async_stream_20261023_fault_recovery_v1/index.html">故障与恢复</a>、<a href="evidence/research/runs/async_stream_20261023_long_v1/index.html">长测</a>。</li>
+<li><a href="evidence/research/runs/async_stream_20261023_smoke_1k_v1/index.html">失败冒烟</a>、<a href="evidence/research/runs/async_stream_20261023_smoke_1k_v2/index.html">修正后冒烟</a>。</li>
+<li><a href="evidence/research/runs/async_stream_20261023_development/index.html">构建/上板/源码快照/核对/交接</a>。原桌面固件备份未动，DK2006不参与。</li>
+<li>机制参考：<a href="https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf">RP2040 datasheet</a>、<a href="https://docs.nordicsemi.com/r/bundle/ps_nrf54lm20a/page/clock.html-concept_rp5_fgp_bs">Nordic HFCLK</a>及本机NCS时钟驱动；实测证据以本地运行记录为准。</li>
+</ul>
+<p>当前留板与待机查询见开发目录<code>closeout.json</code>及<code>final_device_log.json</code>。未来仍需外部参考核验；待第二兼容节点可用后再做完整无线双端观测与事件身份核对。</p></main></body></html>

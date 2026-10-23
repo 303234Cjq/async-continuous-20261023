@@ -1,0 +1,30 @@
+{
+  "pico_serial": "E661AC8863928125",
+  "dk_serial": "001051839577",
+  "pico_version": "continuous-input-v1",
+  "pin_table_confirmed": true,
+  "electrical_interface_verified": true,
+  "gpio13_to_gp15_removed": true,
+  "all_original_loopback_wires_removed": true,
+  "common_ground_confirmed": true,
+  "power_outputs_not_paralleled": true,
+  "verified_by": "User confirmed 三根已接好 after explicit three-wire table and power sequence; host verified current application identities and idle states",
+  "pin_map": {
+    "Pico_GP12": "DK_P1.03",
+    "Pico_GP13": "DK_P1.04",
+    "Pico_GND": "DK_GND"
+  },
+  "interface_description": "Existing verified three wires. Pico GP12 low/high-Z start only and shared pad capture; GP13 input only. DK HFXO finite independent pulse source.",
+  "pico_3v3_measured_v": 3.3,
+  "dk_vddio_measured_v": 3.0,
+  "DK_P1.03_pullup_measured_V": 3.0,
+  "DK_P1.04_high_measured_V": 3.0,
+  "DK_P1.04_low_measured_V": 0.0,
+  "A_observation_point": "Pico_GP12_pad",
+  "external_reference": false,
+  "dk_version": "async-source-v2",
+  "wires_unchanged_from_user_confirmation": true,
+  "nominal_sample_rate_hz": 1000000,
+  "source_of_physical_confirmation": "research/runs/pico_external_od_rate5_20261023_install_v1/connection_record.json",
+  "runtime_identity_verified_in": "final_device_log.json"
+}

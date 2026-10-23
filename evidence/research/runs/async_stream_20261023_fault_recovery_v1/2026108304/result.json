@@ -1,0 +1,34 @@
+{
+  "run": 2026108304,
+  "gate": "FAIL",
+  "gates": {
+    "version": "async-gates-v1",
+    "A_start_sample_inclusive": [
+      1000,
+      10000
+    ],
+    "A_width_sample_inclusive": [
+      28,
+      100
+    ],
+    "period_gap_tolerance_samples": 2,
+    "relative_configuration_tolerance_ppm": 5000,
+    "source_anchor_tolerance_ticks": 16,
+    "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+    "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+    "reference": "none; not an absolute accuracy gate"
+  },
+  "integrity_errors": [
+    "tail:produced",
+    "tail:exported",
+    "tail:errors",
+    "block_count_or_packet_flags",
+    "source:complete",
+    "source:edge_count",
+    "source:marker_level"
+  ],
+  "observation_errors": [],
+  "metrics": null,
+  "sample_hz_estimated": null,
+  "experiment_gate": "PASS"
+}

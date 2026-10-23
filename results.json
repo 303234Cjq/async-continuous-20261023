@@ -1,0 +1,2664 @@
+{
+  "summary": {
+    "formal_runs": 24,
+    "valid_runs": 21,
+    "injected_invalid_runs": 3,
+    "accepted_hardware_B_transitions": 1533000,
+    "long_runs": 3,
+    "long_source_seconds_nominal": 60,
+    "nominal_sample_rate_hz": 1000000,
+    "sample_rate_estimated": null,
+    "scope": "Independent-clock wired pulse train and continuous capture, not wireless latency",
+    "built": "2026-10-23T13:39:24.337976+08:00"
+  },
+  "rows": [
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108200,
+        "edges": 1000,
+        "period_ticks": 16000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "1k",
+        "repeat": 0
+      },
+      "result": {
+        "run": 2026108200,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 1000,
+          "intervals": 999,
+          "A_falling_sample": 2005,
+          "A_rising_sample": 2038,
+          "first_B_sample": 3005,
+          "last_B_sample": 1002005,
+          "mean_interval_samples": 1000.0,
+          "period_gap_histogram": {
+            "1000": 999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108200,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108200,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 1000,
+        "input_count": 1,
+        "edge_count": 1000,
+        "period_ticks": 16000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 1013759,
+        "first_counter_tick": 1029762,
+        "last_edge_tick": 17013760,
+        "stop_counter_tick": 17013762,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108200,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 1000,
+        "raw_sha256": "5e7a664042b7a734b000b76c79902df6ec68bab206404de17f8b7c9484bc6a1c",
+        "edge_sha256": "0e7977c9ef96cbcf53ec7835eef09fe4d363325881b0679e6b7c53ef4dd1e5c1"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108200"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108201,
+        "edges": 2000,
+        "period_ticks": 8000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "2k",
+        "repeat": 0
+      },
+      "result": {
+        "run": 2026108201,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 2000,
+          "intervals": 1999,
+          "A_falling_sample": 2002,
+          "A_rising_sample": 2035,
+          "first_B_sample": 2503,
+          "last_B_sample": 1002003,
+          "mean_interval_samples": 500.0,
+          "period_gap_histogram": {
+            "500": 1999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108201,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108201,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 2000,
+        "input_count": 1,
+        "edge_count": 2000,
+        "period_ticks": 8000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 929488,
+        "first_counter_tick": 937491,
+        "last_edge_tick": 16929489,
+        "stop_counter_tick": 16929491,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108201,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 2000,
+        "raw_sha256": "ed1a4652801213f2d76bd9e8c9c7bd9b7a5fa111e4a591c2804199c21137036f",
+        "edge_sha256": "fd461208456f5870dc07deaf779867a4083228d4467c0bebfd192e20fc93b94f"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108201"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108202,
+        "edges": 4000,
+        "period_ticks": 4000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "4k",
+        "repeat": 0
+      },
+      "result": {
+        "run": 2026108202,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 4000,
+          "intervals": 3999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2033,
+          "first_B_sample": 2251,
+          "last_B_sample": 1002001,
+          "mean_interval_samples": 250.0,
+          "period_gap_histogram": {
+            "250": 3999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108202,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108202,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 4000,
+        "input_count": 1,
+        "edge_count": 4000,
+        "period_ticks": 4000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 971226,
+        "first_counter_tick": 975229,
+        "last_edge_tick": 16971227,
+        "stop_counter_tick": 16971229,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108202,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 4000,
+        "raw_sha256": "70ff6a1adb213b4d9ba289133d6416e784fdd72d12a666041ae087be4ceb65f9",
+        "edge_sha256": "1e13c886bd0701e155327d07487ddd8a471dee329b3b1d0684eb5c3e8f6a35e6"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108202"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108203,
+        "edges": 8000,
+        "period_ticks": 2000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "8k",
+        "repeat": 0
+      },
+      "result": {
+        "run": 2026108203,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 8000,
+          "intervals": 7999,
+          "A_falling_sample": 2002,
+          "A_rising_sample": 2034,
+          "first_B_sample": 2127,
+          "last_B_sample": 1002003,
+          "mean_interval_samples": 125.00012501562695,
+          "period_gap_histogram": {
+            "124": 39,
+            "125": 7920,
+            "126": 40
+          },
+          "relative_clock_difference_ppm": 1.0001250156932429,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108203,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108203,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 8000,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 1020461,
+        "first_counter_tick": 1022464,
+        "last_edge_tick": 17020462,
+        "stop_counter_tick": 17020464,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108203,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 8000,
+        "raw_sha256": "8ccbd0af8ce20201de89ea35afc568d5dfaece6ae2d10deb9aacd81752148109",
+        "edge_sha256": "d5b52418fc337ca6af06140ae1237c2364e5ca83e91a0afd120c5e262830b873"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108203"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108204,
+        "edges": 8000,
+        "period_ticks": 2011,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "off_grid",
+        "repeat": 0
+      },
+      "result": {
+        "run": 2026108204,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 8000,
+          "intervals": 7999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2034,
+          "first_B_sample": 2127,
+          "last_B_sample": 1007502,
+          "mean_interval_samples": 125.68758594824354,
+          "period_gap_histogram": {
+            "125": 2499,
+            "126": 5500
+          },
+          "relative_clock_difference_ppm": 0.6838249113627626,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108204,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108204,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 8000,
+        "period_ticks": 2011,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 1051409,
+        "first_counter_tick": 1053423,
+        "last_edge_tick": 17139410,
+        "stop_counter_tick": 17139412,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108204,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 8000,
+        "raw_sha256": "c2569ca9c96d8087e4dfceab2acfaadaf305fd25bf6401563b2df1a34b0862aa",
+        "edge_sha256": "97fd7e58dcf3f7330e6f5bf505b015d113a1c6ce9e2c3fdcb2e7a47f4e683f66"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108204"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108205,
+        "edges": 1000,
+        "period_ticks": 16000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "1k",
+        "repeat": 1
+      },
+      "result": {
+        "run": 2026108205,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 1000,
+          "intervals": 999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2033,
+          "first_B_sample": 3001,
+          "last_B_sample": 1002002,
+          "mean_interval_samples": 1000.001001001001,
+          "period_gap_histogram": {
+            "999": 4,
+            "1000": 990,
+            "1001": 5
+          },
+          "relative_clock_difference_ppm": 1.0010010009775527,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108205,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108205,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 1000,
+        "input_count": 1,
+        "edge_count": 1000,
+        "period_ticks": 16000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 947467,
+        "first_counter_tick": 963470,
+        "last_edge_tick": 16947468,
+        "stop_counter_tick": 16947470,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108205,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 1000,
+        "raw_sha256": "1b939f57ba7a58d47a0d9a4057126293eaf1fede2b06871705ed803e8276251d",
+        "edge_sha256": "86e956ecf4fc6bc7c56979426990c9f56cd3ab20bd0507c6951c07dc77a176af"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108205"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108206,
+        "edges": 2000,
+        "period_ticks": 8000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "2k",
+        "repeat": 1
+      },
+      "result": {
+        "run": 2026108206,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 2000,
+          "intervals": 1999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2034,
+          "first_B_sample": 2502,
+          "last_B_sample": 1002002,
+          "mean_interval_samples": 500.0,
+          "period_gap_histogram": {
+            "500": 1999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108206,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108206,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 2000,
+        "input_count": 1,
+        "edge_count": 2000,
+        "period_ticks": 8000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 928281,
+        "first_counter_tick": 936284,
+        "last_edge_tick": 16928282,
+        "stop_counter_tick": 16928284,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108206,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 2000,
+        "raw_sha256": "79907728707fb0e6dcda348ae28a2ac2992f53d6c2f4f6bb65f0ed3534583461",
+        "edge_sha256": "533863b415db762a42df43644bd49f0888f1a1c1f8563094d3a94accf53fc9c9"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108206"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108207,
+        "edges": 4000,
+        "period_ticks": 4000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "4k",
+        "repeat": 1
+      },
+      "result": {
+        "run": 2026108207,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 4000,
+          "intervals": 3999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2033,
+          "first_B_sample": 2251,
+          "last_B_sample": 1002001,
+          "mean_interval_samples": 250.0,
+          "period_gap_histogram": {
+            "250": 3999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108207,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108207,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 4000,
+        "input_count": 1,
+        "edge_count": 4000,
+        "period_ticks": 4000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 916750,
+        "first_counter_tick": 920753,
+        "last_edge_tick": 16916751,
+        "stop_counter_tick": 16916753,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108207,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 4000,
+        "raw_sha256": "70ff6a1adb213b4d9ba289133d6416e784fdd72d12a666041ae087be4ceb65f9",
+        "edge_sha256": "1e13c886bd0701e155327d07487ddd8a471dee329b3b1d0684eb5c3e8f6a35e6"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108207"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108208,
+        "edges": 8000,
+        "period_ticks": 2000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "8k",
+        "repeat": 1
+      },
+      "result": {
+        "run": 2026108208,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 8000,
+          "intervals": 7999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2034,
+          "first_B_sample": 2127,
+          "last_B_sample": 1002002,
+          "mean_interval_samples": 125.0,
+          "period_gap_histogram": {
+            "125": 7999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108208,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108208,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 8000,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 923957,
+        "first_counter_tick": 925960,
+        "last_edge_tick": 16923958,
+        "stop_counter_tick": 16923960,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108208,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 8000,
+        "raw_sha256": "921c32921674b741f79c277036620aa83b2f2b2bbc4e1f0c56df64643a1a9241",
+        "edge_sha256": "98a82826bce0a0ff209423b89b02196f6d7ca78f39a9fa5f33ae8ad5180fe0a6"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108208"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108209,
+        "edges": 8000,
+        "period_ticks": 2011,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "off_grid",
+        "repeat": 1
+      },
+      "result": {
+        "run": 2026108209,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 8000,
+          "intervals": 7999,
+          "A_falling_sample": 2002,
+          "A_rising_sample": 2034,
+          "first_B_sample": 2128,
+          "last_B_sample": 1007502,
+          "mean_interval_samples": 125.68746093261657,
+          "period_gap_histogram": {
+            "125": 2500,
+            "126": 5499
+          },
+          "relative_clock_difference_ppm": -0.31082950513461327,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108209,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108209,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 8000,
+        "period_ticks": 2011,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 1048089,
+        "first_counter_tick": 1050103,
+        "last_edge_tick": 17136090,
+        "stop_counter_tick": 17136092,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108209,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 8000,
+        "raw_sha256": "34e7b9480194f25299e0afbff214005d22a103bfb4e35c1e82fabdc27ba2cf91",
+        "edge_sha256": "53114f3cffe1d630ec7bc09f4febf8cedde68a71b6891192021a184769a28189"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108209"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108210,
+        "edges": 1000,
+        "period_ticks": 16000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "1k",
+        "repeat": 2
+      },
+      "result": {
+        "run": 2026108210,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 1000,
+          "intervals": 999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2034,
+          "first_B_sample": 3002,
+          "last_B_sample": 1002002,
+          "mean_interval_samples": 1000.0,
+          "period_gap_histogram": {
+            "1000": 999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108210,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108210,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 1000,
+        "input_count": 1,
+        "edge_count": 1000,
+        "period_ticks": 16000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 943616,
+        "first_counter_tick": 959619,
+        "last_edge_tick": 16943617,
+        "stop_counter_tick": 16943619,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108210,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 1000,
+        "raw_sha256": "bf5262002401ab9ab6c24486aa3f6b1e654f493826d4a6f1f465a7fc863cb198",
+        "edge_sha256": "ccf27f8a6f4dccc6b0fcc4f3cb1b313829707978372361259519c1c94398d5f3"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108210"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108211,
+        "edges": 2000,
+        "period_ticks": 8000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "2k",
+        "repeat": 2
+      },
+      "result": {
+        "run": 2026108211,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 2000,
+          "intervals": 1999,
+          "A_falling_sample": 2000,
+          "A_rising_sample": 2033,
+          "first_B_sample": 2501,
+          "last_B_sample": 1002001,
+          "mean_interval_samples": 500.0,
+          "period_gap_histogram": {
+            "500": 1999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108211,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108211,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 2000,
+        "input_count": 1,
+        "edge_count": 2000,
+        "period_ticks": 8000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 888625,
+        "first_counter_tick": 896628,
+        "last_edge_tick": 16888626,
+        "stop_counter_tick": 16888628,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108211,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 2000,
+        "raw_sha256": "dece0a8c77942a03721f9246a55243ebc42a5ca2bc425fb7c6bb9f4a8101d87f",
+        "edge_sha256": "b51dcab6d57efd55c6922bbafb28ecd245d1a6226f7f7280dedb36c1c14c15bd"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108211"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108212,
+        "edges": 4000,
+        "period_ticks": 4000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "4k",
+        "repeat": 2
+      },
+      "result": {
+        "run": 2026108212,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 4000,
+          "intervals": 3999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2034,
+          "first_B_sample": 2252,
+          "last_B_sample": 1002002,
+          "mean_interval_samples": 250.0,
+          "period_gap_histogram": {
+            "250": 3999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108212,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108212,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 4000,
+        "input_count": 1,
+        "edge_count": 4000,
+        "period_ticks": 4000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 966436,
+        "first_counter_tick": 970439,
+        "last_edge_tick": 16966437,
+        "stop_counter_tick": 16966439,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108212,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 4000,
+        "raw_sha256": "26a53d28685e1b5fea8546b3f660f7a700165c35567ae2e685c244710ff49be5",
+        "edge_sha256": "2e948c5f28dbf1ecee00a95f827341e0286e60d1bedd32092b1eec40010891c9"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108212"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108213,
+        "edges": 8000,
+        "period_ticks": 2000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "8k",
+        "repeat": 2
+      },
+      "result": {
+        "run": 2026108213,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 8000,
+          "intervals": 7999,
+          "A_falling_sample": 2002,
+          "A_rising_sample": 2034,
+          "first_B_sample": 2127,
+          "last_B_sample": 1002002,
+          "mean_interval_samples": 125.0,
+          "period_gap_histogram": {
+            "125": 7999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108213,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108213,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 8000,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 1035468,
+        "first_counter_tick": 1037471,
+        "last_edge_tick": 17035469,
+        "stop_counter_tick": 17035471,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108213,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 8000,
+        "raw_sha256": "e594a90de490e538b800ad9a0c3550dde9137de48bb99c4bcaf329bf35aa2c74",
+        "edge_sha256": "98a82826bce0a0ff209423b89b02196f6d7ca78f39a9fa5f33ae8ad5180fe0a6"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108213"
+    },
+    {
+      "phase": "short",
+      "plan": {
+        "run": 2026108214,
+        "edges": 8000,
+        "period_ticks": 2011,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "off_grid",
+        "repeat": 2
+      },
+      "result": {
+        "run": 2026108214,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 8000,
+          "intervals": 7999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2033,
+          "first_B_sample": 2127,
+          "last_B_sample": 1007501,
+          "mean_interval_samples": 125.68746093261657,
+          "period_gap_histogram": {
+            "125": 2500,
+            "126": 5499
+          },
+          "relative_clock_difference_ppm": -0.31082950513461327,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108214,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108214,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 8000,
+        "period_ticks": 2011,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 982977,
+        "first_counter_tick": 984991,
+        "last_edge_tick": 17070978,
+        "stop_counter_tick": 17070980,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108214,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 8000,
+        "raw_sha256": "68221ccaa96b6ec8221b512bbb4e9a1dcbdd4a1b8d87136e3494bfea43e88d80",
+        "edge_sha256": "54f6b2d260ae644e31faf6645b3e82f9b0d57ce3df1b18bd60e5c18d56e7cd9f"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_short_v1/2026108214"
+    },
+    {
+      "phase": "fault",
+      "plan": {
+        "run": 2026108300,
+        "edges": 8000,
+        "period_ticks": 2000,
+        "blocks": 23,
+        "hold_ms": 500,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": false,
+        "label": "hold_fault",
+        "repeat": 0
+      },
+      "result": {
+        "run": 2026108300,
+        "gate": "FAIL",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [
+          "tail:produced",
+          "tail:exported",
+          "tail:errors",
+          "block_count_or_packet_flags",
+          "source:complete",
+          "source:edge_count"
+        ],
+        "observation_errors": [],
+        "metrics": null,
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108300,
+        "requested_blocks": 23,
+        "produced": 4,
+        "exported": 4,
+        "errors": 2,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108300,
+        "armed": 0,
+        "complete": 0,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 5516,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 889661,
+        "first_counter_tick": 891664,
+        "last_edge_tick": 11921662,
+        "stop_counter_tick": 17070980,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108300,
+        "verified": "EXPECTED_CAPTURE_INVALID",
+        "packets": 4,
+        "edges_accepted": 0,
+        "terminal_errors": 2,
+        "raw_sha256": "a98ca54bd2e79c54470f446b2b77f69c3b5baa3777281b46b86179a10c33aa95"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_fault_recovery_v1/2026108300"
+    },
+    {
+      "phase": "fault",
+      "plan": {
+        "run": 2026108301,
+        "edges": 8000,
+        "period_ticks": 2000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "recovery",
+        "repeat": 0
+      },
+      "result": {
+        "run": 2026108301,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 8000,
+          "intervals": 7999,
+          "A_falling_sample": 2002,
+          "A_rising_sample": 2035,
+          "first_B_sample": 2128,
+          "last_B_sample": 1002003,
+          "mean_interval_samples": 125.0,
+          "period_gap_histogram": {
+            "125": 7999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108301,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108301,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 8000,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 966400,
+        "first_counter_tick": 968403,
+        "last_edge_tick": 16966401,
+        "stop_counter_tick": 16966403,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108301,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 8000,
+        "raw_sha256": "f21958c3d4263314cbcba34d5e08924056b5717cba3b36d7cb23f0796232f6e1",
+        "edge_sha256": "4a554dcc6326e9f92c788fd949cdc722f25c2f731d79e11bc7290b8fdb707131"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_fault_recovery_v1/2026108301"
+    },
+    {
+      "phase": "fault",
+      "plan": {
+        "run": 2026108302,
+        "edges": 8000,
+        "period_ticks": 2000,
+        "blocks": 23,
+        "hold_ms": 500,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": false,
+        "label": "hold_fault",
+        "repeat": 1
+      },
+      "result": {
+        "run": 2026108302,
+        "gate": "FAIL",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [
+          "tail:produced",
+          "tail:exported",
+          "tail:errors",
+          "block_count_or_packet_flags",
+          "source:complete",
+          "source:edge_count",
+          "source:marker_level"
+        ],
+        "observation_errors": [],
+        "metrics": null,
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108302,
+        "requested_blocks": 23,
+        "produced": 4,
+        "exported": 4,
+        "errors": 2,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108302,
+        "armed": 0,
+        "complete": 0,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 5557,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 1,
+        "input_tick": 1024418,
+        "first_counter_tick": 1026421,
+        "last_edge_tick": 12138419,
+        "stop_counter_tick": 16966403,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108302,
+        "verified": "EXPECTED_CAPTURE_INVALID",
+        "packets": 4,
+        "edges_accepted": 0,
+        "terminal_errors": 2,
+        "raw_sha256": "acd99fdd2937bf59a71167845e58bb8aeaf88eae9ac319ea1dbbeec3e7b016c8"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_fault_recovery_v1/2026108302"
+    },
+    {
+      "phase": "fault",
+      "plan": {
+        "run": 2026108303,
+        "edges": 8000,
+        "period_ticks": 2000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "recovery",
+        "repeat": 1
+      },
+      "result": {
+        "run": 2026108303,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 8000,
+          "intervals": 7999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2033,
+          "first_B_sample": 2126,
+          "last_B_sample": 1002001,
+          "mean_interval_samples": 125.0,
+          "period_gap_histogram": {
+            "125": 7999
+          },
+          "relative_clock_difference_ppm": 0.0,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108303,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108303,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 8000,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 1050429,
+        "first_counter_tick": 1052432,
+        "last_edge_tick": 17050430,
+        "stop_counter_tick": 17050432,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108303,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 8000,
+        "raw_sha256": "94d04535b05d07a1332739d11ae3c0c59ea36a9e406d1a34d48e2f6b8e913a87",
+        "edge_sha256": "42f8d946aeaf8be9d0d6eade6927e52e5576c1103fa98796ab605efce3484cc5"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_fault_recovery_v1/2026108303"
+    },
+    {
+      "phase": "fault",
+      "plan": {
+        "run": 2026108304,
+        "edges": 8000,
+        "period_ticks": 2000,
+        "blocks": 23,
+        "hold_ms": 500,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": false,
+        "label": "hold_fault",
+        "repeat": 2
+      },
+      "result": {
+        "run": 2026108304,
+        "gate": "FAIL",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [
+          "tail:produced",
+          "tail:exported",
+          "tail:errors",
+          "block_count_or_packet_flags",
+          "source:complete",
+          "source:edge_count",
+          "source:marker_level"
+        ],
+        "observation_errors": [],
+        "metrics": null,
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108304,
+        "requested_blocks": 23,
+        "produced": 4,
+        "exported": 4,
+        "errors": 2,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108304,
+        "armed": 0,
+        "complete": 0,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 5481,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 1,
+        "input_tick": 908451,
+        "first_counter_tick": 910454,
+        "last_edge_tick": 11870452,
+        "stop_counter_tick": 17050432,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108304,
+        "verified": "EXPECTED_CAPTURE_INVALID",
+        "packets": 4,
+        "edges_accepted": 0,
+        "terminal_errors": 2,
+        "raw_sha256": "e1f80d192f1ff8d3dfb46ed5a0916ec5833fcedbf64a7df2e4c066d3d690bff0"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_fault_recovery_v1/2026108304"
+    },
+    {
+      "phase": "fault",
+      "plan": {
+        "run": 2026108305,
+        "edges": 8000,
+        "period_ticks": 2000,
+        "blocks": 23,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "recovery",
+        "repeat": 2
+      },
+      "result": {
+        "run": 2026108305,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 1507328,
+          "capture_seconds_nominal": 1.507328,
+          "actual_B_transitions": 8000,
+          "intervals": 7999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2033,
+          "first_B_sample": 2126,
+          "last_B_sample": 1002002,
+          "mean_interval_samples": 125.00012501562695,
+          "period_gap_histogram": {
+            "124": 41,
+            "125": 7916,
+            "126": 42
+          },
+          "relative_clock_difference_ppm": 1.0001250156932429,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108305,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108305,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 8000,
+        "input_count": 1,
+        "edge_count": 8000,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 1047208,
+        "first_counter_tick": 1049211,
+        "last_edge_tick": 17047209,
+        "stop_counter_tick": 17047211,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108305,
+        "verified": "PASS",
+        "packets": 23,
+        "edges_accepted": 8000,
+        "raw_sha256": "fef7152ce227a5b55eb2b8e539e7bd756df2cb5f20dd47969823667c8e552225",
+        "edge_sha256": "af95cfbdefbc1089f667d77e8135c0f74032844426d4474f966e1b6c79a5b7b8"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_fault_recovery_v1/2026108305"
+    },
+    {
+      "phase": "long",
+      "plan": {
+        "run": 2026108400,
+        "edges": 480000,
+        "period_ticks": 2000,
+        "blocks": 924,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "8k_60s",
+        "repeat": 0
+      },
+      "result": {
+        "run": 2026108400,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 60555264,
+          "capture_seconds_nominal": 60.555264,
+          "actual_B_transitions": 480000,
+          "intervals": 479999,
+          "A_falling_sample": 2004,
+          "A_rising_sample": 2038,
+          "first_B_sample": 2130,
+          "last_B_sample": 60002019,
+          "mean_interval_samples": 125.00002916672743,
+          "period_gap_histogram": {
+            "124": 555,
+            "125": 478875,
+            "126": 569
+          },
+          "relative_clock_difference_ppm": 0.23333381937717945,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108400,
+        "requested_blocks": 924,
+        "produced": 924,
+        "exported": 924,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108400,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 480000,
+        "input_count": 1,
+        "edge_count": 480000,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 1022537,
+        "first_counter_tick": 1024540,
+        "last_edge_tick": 961022538,
+        "stop_counter_tick": 961022540,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108400,
+        "verified": "PASS",
+        "packets": 924,
+        "edges_accepted": 480000,
+        "raw_sha256": "3f59272d8f421be61d885fea5182d5e7bc51652e0fa30678a6e21e33a3f9250a",
+        "edge_sha256": "8a5916bda73ea35a63ab5747ef3372286f71b7d40839d0f4427ae3ea3f84df5f"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_long_v1/2026108400"
+    },
+    {
+      "phase": "long",
+      "plan": {
+        "run": 2026108401,
+        "edges": 480000,
+        "period_ticks": 2000,
+        "blocks": 924,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "8k_60s",
+        "repeat": 1
+      },
+      "result": {
+        "run": 2026108401,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 60555264,
+          "capture_seconds_nominal": 60.555264,
+          "actual_B_transitions": 480000,
+          "intervals": 479999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2034,
+          "first_B_sample": 2127,
+          "last_B_sample": 60002016,
+          "mean_interval_samples": 125.00002916672743,
+          "period_gap_histogram": {
+            "124": 565,
+            "125": 478855,
+            "126": 579
+          },
+          "relative_clock_difference_ppm": 0.23333381937717945,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108401,
+        "requested_blocks": 924,
+        "produced": 924,
+        "exported": 924,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108401,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 480000,
+        "input_count": 1,
+        "edge_count": 480000,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 908128,
+        "first_counter_tick": 910131,
+        "last_edge_tick": 960908129,
+        "stop_counter_tick": 960908131,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108401,
+        "verified": "PASS",
+        "packets": 924,
+        "edges_accepted": 480000,
+        "raw_sha256": "577d8b3eca63f8a05e418013f65c0962b4e634c4adf02ff9448a13ae84e48d8d",
+        "edge_sha256": "f89185b6e7c3b3b5c3eb89426c02357252b7aa0c458d29ff4be62f135b8f62fa"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_long_v1/2026108401"
+    },
+    {
+      "phase": "long",
+      "plan": {
+        "run": 2026108402,
+        "edges": 480000,
+        "period_ticks": 2000,
+        "blocks": 924,
+        "hold_ms": 0,
+        "sample_hz_nominal": 1000000,
+        "sample_hz_estimated": null,
+        "gate_version": "async-gates-v1",
+        "evidence_type": "hardware_acquisition",
+        "expected_valid": true,
+        "label": "8k_60s",
+        "repeat": 2
+      },
+      "result": {
+        "run": 2026108402,
+        "gate": "PASS",
+        "gates": {
+          "version": "async-gates-v1",
+          "A_start_sample_inclusive": [
+            1000,
+            10000
+          ],
+          "A_width_sample_inclusive": [
+            28,
+            100
+          ],
+          "period_gap_tolerance_samples": 2,
+          "relative_configuration_tolerance_ppm": 5000,
+          "source_anchor_tolerance_ticks": 16,
+          "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+          "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+          "reference": "none; not an absolute accuracy gate"
+        },
+        "integrity_errors": [],
+        "observation_errors": [],
+        "metrics": {
+          "samples": 60555264,
+          "capture_seconds_nominal": 60.555264,
+          "actual_B_transitions": 480000,
+          "intervals": 479999,
+          "A_falling_sample": 2001,
+          "A_rising_sample": 2033,
+          "first_B_sample": 2127,
+          "last_B_sample": 60002016,
+          "mean_interval_samples": 125.00002916672743,
+          "period_gap_histogram": {
+            "124": 581,
+            "125": 478823,
+            "126": 595
+          },
+          "relative_clock_difference_ppm": 0.23333381937717945,
+          "source_span_residual_ticks": -2,
+          "source_stop_delay_ticks": 2,
+          "rates_are_nominal": true,
+          "measurement_scope": "independent-clock edge train; not wireless input latency"
+        },
+        "sample_hz_estimated": null,
+        "experiment_gate": "PASS"
+      },
+      "tail": {
+        "run": 2026108402,
+        "requested_blocks": 924,
+        "produced": 924,
+        "exported": 924,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v2",
+        "run": 2026108402,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 480000,
+        "input_count": 1,
+        "edge_count": 480000,
+        "period_ticks": 2000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 1032954,
+        "first_counter_tick": 1034957,
+        "last_edge_tick": 961032955,
+        "stop_counter_tick": 961032957,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "hf_before_request": 0,
+        "hf_high_accuracy": 1,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      },
+      "independent": {
+        "run": 2026108402,
+        "verified": "PASS",
+        "packets": 924,
+        "edges_accepted": 480000,
+        "raw_sha256": "c9122b606d18923720b040442be63fc4528d69eeb17c7ae4aea69254ab97fb57",
+        "edge_sha256": "59fb81118e346a1d5be6494984b31fab7ac25a24374872ea2965b6482a685ad6"
+      },
+      "folder": "../../../research/runs/async_stream_20261023_long_v1/2026108402"
+    }
+  ],
+  "failed_smoke": {
+    "folder": "../../../research/runs/async_stream_20261023_smoke_1k_v1",
+    "result": {
+      "run": 2026108101,
+      "gate": "FAIL",
+      "gates": {
+        "version": "async-gates-v1",
+        "A_start_sample_inclusive": [
+          1000,
+          10000
+        ],
+        "A_width_sample_inclusive": [
+          28,
+          100
+        ],
+        "period_gap_tolerance_samples": 2,
+        "relative_configuration_tolerance_ppm": 5000,
+        "source_anchor_tolerance_ticks": 16,
+        "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+        "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+        "reference": "none; not an absolute accuracy gate"
+      },
+      "integrity_errors": [],
+      "observation_errors": [
+        "period_gap"
+      ],
+      "metrics": null,
+      "sample_hz_estimated": null,
+      "experiment_gate": "FAIL"
+    },
+    "diagnostic": {
+      "diagnostic_only_failed_run": true,
+      "A": [
+        [
+          2051,
+          0
+        ],
+        [
+          2085,
+          1
+        ]
+      ],
+      "B_count": 1000,
+      "initial": 1,
+      "final": 1,
+      "samples": 1507328,
+      "gaps": {
+        "998": 289,
+        "997": 700,
+        "996": 10
+      },
+      "first_B": [
+        3048,
+        4046,
+        5043,
+        6041,
+        7038,
+        8035,
+        9033,
+        10030,
+        11027,
+        12024,
+        13022,
+        14019,
+        15016,
+        16013,
+        17011
+      ],
+      "last_B": [
+        985373,
+        986370,
+        987367,
+        988364,
+        989362,
+        990359,
+        991356,
+        992353,
+        993349,
+        994346,
+        995343,
+        996340,
+        997337,
+        998333,
+        999330
+      ],
+      "tail": {
+        "run": 2026108101,
+        "requested_blocks": 23,
+        "produced": 23,
+        "exported": 23,
+        "errors": 0,
+        "fdebug": 0,
+        "discarded_partial_words": 0,
+        "A_released": true,
+        "B_input_only": true
+      },
+      "source": {
+        "version": "async-source-v1",
+        "run": 2026108101,
+        "armed": 0,
+        "complete": 1,
+        "requested_edges": 1000,
+        "input_count": 1,
+        "edge_count": 1000,
+        "period_ticks": 16000,
+        "timer_hz": 16000000,
+        "marker_level": 0,
+        "input_tick": 885089,
+        "first_counter_tick": 901092,
+        "last_edge_tick": 16885090,
+        "stop_counter_tick": 16885092,
+        "errors": 0,
+        "uart_dropped": 0,
+        "cmd_overflow": 0,
+        "input_pin": "P1.03",
+        "marker_pin": "P1.04"
+      }
+    }
+  },
+  "passed_smoke": {
+    "folder": "../../../research/runs/async_stream_20261023_smoke_1k_v2",
+    "result": {
+      "run": 2026108102,
+      "gate": "PASS",
+      "gates": {
+        "version": "async-gates-v1",
+        "A_start_sample_inclusive": [
+          1000,
+          10000
+        ],
+        "A_width_sample_inclusive": [
+          28,
+          100
+        ],
+        "period_gap_tolerance_samples": 2,
+        "relative_configuration_tolerance_ppm": 5000,
+        "source_anchor_tolerance_ticks": 16,
+        "capture_integrity": "all blocks, CRCs, sequence, final flags and source counts must pass",
+        "invalid_capture_policy": "whole run invalid; no prefix timing metrics",
+        "reference": "none; not an absolute accuracy gate"
+      },
+      "integrity_errors": [],
+      "observation_errors": [],
+      "metrics": {
+        "samples": 1507328,
+        "capture_seconds_nominal": 1.507328,
+        "actual_B_transitions": 1000,
+        "intervals": 999,
+        "A_falling_sample": 2009,
+        "A_rising_sample": 2043,
+        "first_B_sample": 3009,
+        "last_B_sample": 1002010,
+        "mean_interval_samples": 1000.001001001001,
+        "period_gap_histogram": {
+          "999": 5,
+          "1000": 988,
+          "1001": 6
+        },
+        "relative_clock_difference_ppm": 1.0010010009775527,
+        "source_span_residual_ticks": -2,
+        "source_stop_delay_ticks": 2,
+        "rates_are_nominal": true,
+        "measurement_scope": "independent-clock edge train; not wireless input latency"
+      },
+      "sample_hz_estimated": null,
+      "experiment_gate": "PASS"
+    }
+  }
+}

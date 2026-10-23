@@ -1,0 +1,30 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>独立时钟输入与连续采集验证</title><style>
+body{margin:0;background:#f3f6fa;color:#182437;font:16px/1.75 system-ui,-apple-system,"PingFang SC",sans-serif}
+main{max-width:900px;margin:auto;padding:36px 22px}
+a{color:#1d4ed8}
+h1{font-size:30px;line-height:1.4;margin-top:0}
+h2{font-size:22px;margin-top:2em;border-bottom:1px solid #dce3ec;padding-bottom:.3em}
+h3{font-size:18px;margin-top:1.6em}
+table{border-collapse:collapse;width:100%;font-size:14px;background:white;margin:1em 0}
+th,td{padding:9px 12px;text-align:left;border-bottom:1px solid #e2e8f0}
+th{background:#f7fafc}
+code{background:#eef2f7;padding:2px 5px;border-radius:4px;font-size:14px}
+pre{background:#0f172a;color:#e2e8f0;padding:16px;border-radius:10px;overflow:auto}
+pre code{background:none;color:inherit;padding:0}
+img{max-width:100%;height:auto;background:white}
+blockquote{margin:1em 0;padding:.6em 1em;background:#fff6df;border-left:4px solid #d97706}
+.back{display:inline-block;margin-bottom:18px;font-size:14px;text-decoration:none}
+</style></head><body><main><a class="back" href="../index.html">← 返回报告首页</a><h1>独立时钟输入与连续采集验证</h1>
+<p>与<code>polling_phase</code>分开：本实验只用一次启动输入，随后观察DK硬件边沿列。实际采样、块编号、CRC、源硬件计数和结束状态一起决定完整性；只要任一失败，整次记录的<code>metrics</code>为null。</p>
+<p><code>core.py</code>实现严格协议、分块采集、原始整数边沿提取和判据；<code>collect.py</code>默认为只生成离线计划，显式<code>--execute</code>才访问串口；<code>matrix.py</code>是有界正式实验；<code>independent_check.py</code>从原始wire重新验证CRC，并用不同的32位XOR算法提取边沿，不导入主分析器。</p>
+<h2>复现入口</h2>
+<p>先确认设备已运行本分支的两个精确应用版本和既有三线，不能把这些命令用于未知固件。原接线记录中的旧应用版本属于历史接线确认，运行身份以本次READY／ARMED／END为准；未来实验使用本分支交接中的更新记录。</p>
+<p>离线计划（不访问设备）：</p>
+<pre><code class="language-sh">/opt/nordic/ncs/toolchains/0c0f19d91c/bin/python3 /Applications/biyesheji/software/async_stream/collect.py --run 2026109000 --edges 8000 --period-ticks 2000 --output /Applications/biyesheji/research/runs/async_example_plan
+</code></pre>
+<p>正式实验需在上面命令增加<code>--execute --connection-record &lt;已核实记录&gt; --dk-port &lt;经序列号核实的应用控制串口&gt;</code>。输出目录必须不存在。不同运行使用新run ID，命令中没有烧录、recover或重启功能。矩阵三阶段为<code>short</code>、<code>fault</code>、<code>long</code>，每阶段遇意外失败即停。</p>
+<p>软件验证：</p>
+<pre><code class="language-sh">/opt/nordic/ncs/toolchains/0c0f19d91c/bin/python3 -m unittest discover -s /Applications/biyesheji/software/async_stream -p 'test_*.py' -v
+/opt/nordic/ncs/toolchains/0c0f19d91c/bin/python3 /Applications/biyesheji/software/async_stream/independent_check.py &lt;实验目录&gt; --output &lt;新核对文件.json&gt;
+</code></pre>
+<p><code>report.py</code>只从已保存的实测及独立核对结果生成离线报告，不访问板卡。名义时间不构成绝对准确度校准，1 μs采样网格也不能证明信号本身具有0或1 μs抖动。</p></main></body></html>
